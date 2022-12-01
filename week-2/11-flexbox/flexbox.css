@@ -1,1 +1,14 @@
 /* Add your own CSS code below */
+*{
+    font-weight: boldgit ;
+}
+.countries--first{
+    display: flex;
+    flex-direction: row-reverse;
+   
+
+}
+.countries--third{
+    flex-direction: column-reverse;
+    display: flex;
+}
