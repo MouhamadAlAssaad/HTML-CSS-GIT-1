@@ -12,9 +12,9 @@
 
   <body>
     <div class="site-wrapper">
-      <div class="site-header">
-        <div class="site-header__title">C.Y.F</div>
-        <div class="main-nav">
+      <header class="site-header">
+        <div class="site-header__title">CODI</div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
               <a href="index.html">Latest</a>
@@ -26,7 +26,7 @@
               <a href="contact.html">Contact</a>
             </li>
           </ul>
-        </div>
+        </nav>
         <form class="site-search" action="/search">
           <label for="search-input">
             Search
@@ -48,21 +48,41 @@
           </svg>
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </header>
 
       <main>
         <h1>Contact Us</h1>
         <p>Send us an email if you would like to contact us.</p>
         <form method="GET" class="contact-form">
+         
           <div class="contact-form__field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" required/>
           </div>
           <div class="contact-form__field">
-            <textarea
+            <label for="emal">Email</label>
+            <input type="email" name="email" id="emal" required/>
+          </div>
+          <div class="contact-form__field">
+            <label for="mess">Message</label>
+            <textarea id="mess"
               name="message"
               placeholder="Your message should not be longer than 200 words."
-            ></textarea>
+           required ></textarea>
+            <fieldset>
+              <legend>What branch are you intrested in </legend>
+            <label>
+              <input type="radio" name="add1" />London
+            </label><br>
+            <label>
+              <input type="radio" name="add1" />Glasgow
+            </label><br>
+            <label>
+              <input type="radio" name="add1" />Manchester
+            </label><br>
+         
+            
+          </fieldset>
           </div>
           <button type="submit">Send</button>
         </form>
